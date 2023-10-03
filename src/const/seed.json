@@ -1,0 +1,2572 @@
+[
+  {
+    "warehouse": [
+      {
+        "id": "31d5ea49-bcd5-40fb-9e06-e4246171fc16",
+        "name": "Main Warehouse",
+        "location": "New York",
+        "capacity": 39110,
+        "current_inventory": 87637,
+        "created_at": "2023-10-03T08:37:24.036Z",
+        "updated_at": "2023-10-02T22:44:20.570Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "32417c24-012b-49ef-943e-e30eb7e476ef",
+        "name": "Central Storage",
+        "location": "London",
+        "capacity": 46850,
+        "current_inventory": 79868,
+        "created_at": "2023-10-03T05:22:29.904Z",
+        "updated_at": "2023-10-03T08:48:09.891Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "ac09d741-23bd-4731-8cc2-09520e838fce",
+        "name": "Global Distribution Center",
+        "location": "Tokyo",
+        "capacity": 81988,
+        "current_inventory": 66415,
+        "created_at": "2023-10-02T17:37:52.438Z",
+        "updated_at": "2023-10-02T22:32:24.237Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "3689bf12-a463-4a39-aa4a-4d817057ba55",
+        "name": "Regional Depot",
+        "location": "Sydney",
+        "capacity": 71238,
+        "current_inventory": 3425,
+        "created_at": "2023-10-02T16:55:41.872Z",
+        "updated_at": "2023-10-03T12:39:35.376Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "8ca935dd-43e6-41cc-b202-57d0cd3f39da",
+        "name": "Logistics Hub",
+        "location": "Berlin",
+        "capacity": 22475,
+        "current_inventory": 33052,
+        "created_at": "2023-10-03T08:11:10.382Z",
+        "updated_at": "2023-10-02T18:44:58.744Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "52eab609-21ab-4fae-8998-e4227d8d7876",
+        "product_name": "Widget",
+        "product_description": "High-quality and durable",
+        "quantity": 34016,
+        "received_date": "2023-10-03T01:06:31.721Z",
+        "created_at": "2023-10-02T19:11:15.306Z",
+        "updated_at": "2023-10-03T09:12:16.604Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "85d730a2-04a5-472b-8d01-d1b1756f4369",
+        "product_name": "Gadget",
+        "product_description": "Cutting-edge technology",
+        "quantity": 14948,
+        "received_date": "2023-10-02T21:50:34.048Z",
+        "created_at": "2023-10-03T04:24:07.132Z",
+        "updated_at": "2023-10-02T16:46:14.314Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "0b548d7c-f28c-41b4-8c6d-4381fa611f7d",
+        "product_name": "Tool",
+        "product_description": "Versatile and efficient",
+        "quantity": 83837,
+        "received_date": "2023-10-02T14:12:11.910Z",
+        "created_at": "2023-10-02T13:52:57.526Z",
+        "updated_at": "2023-10-02T22:53:22.070Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "74c31c67-f040-488b-bd46-327638801e28",
+        "product_name": "Device",
+        "product_description": "Innovative design",
+        "quantity": 56686,
+        "received_date": "2023-10-02T16:25:59.602Z",
+        "created_at": "2023-10-03T05:40:10.954Z",
+        "updated_at": "2023-10-02T14:06:28.989Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "b964a136-978c-49d0-a504-f6b1184ee637",
+        "product_name": "Equipment",
+        "product_description": "Reliable performance",
+        "quantity": 56709,
+        "received_date": "2023-10-02T17:03:56.521Z",
+        "created_at": "2023-10-03T09:09:03.611Z",
+        "updated_at": "2023-10-03T04:54:44.391Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "shipment": [
+      {
+        "id": "714dba5e-bc5f-43bf-99ed-31e58ff353da",
+        "shipment_status": "In Transit",
+        "dispatch_date": "2023-10-03T07:13:16.220Z",
+        "arrival_date": "2023-10-02T18:55:49.563Z",
+        "created_at": "2023-10-03T11:10:12.584Z",
+        "updated_at": "2023-10-02T19:25:53.875Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "85d730a2-04a5-472b-8d01-d1b1756f4369"
+      },
+      {
+        "id": "86824918-b195-46d4-b54d-fca353a1ce09",
+        "shipment_status": "Delivered",
+        "dispatch_date": "2023-10-03T04:08:53.405Z",
+        "arrival_date": "2023-10-03T09:25:56.651Z",
+        "created_at": "2023-10-03T10:26:45.515Z",
+        "updated_at": "2023-10-02T20:32:40.401Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "85d730a2-04a5-472b-8d01-d1b1756f4369"
+      },
+      {
+        "id": "16c53e62-7b4e-40c3-99f5-4bc032b0399a",
+        "shipment_status": "Out for Delivery",
+        "dispatch_date": "2023-10-02T15:03:52.444Z",
+        "arrival_date": "2023-10-02T21:24:20.316Z",
+        "created_at": "2023-10-02T13:35:20.208Z",
+        "updated_at": "2023-10-02T23:04:56.427Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "0b548d7c-f28c-41b4-8c6d-4381fa611f7d"
+      },
+      {
+        "id": "7c6d66bb-822c-4a8a-96b7-22e23c7637e8",
+        "shipment_status": "Arrived at Destination",
+        "dispatch_date": "2023-10-03T00:41:21.347Z",
+        "arrival_date": "2023-10-03T06:34:15.599Z",
+        "created_at": "2023-10-03T04:14:47.876Z",
+        "updated_at": "2023-10-03T06:48:39.355Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "b964a136-978c-49d0-a504-f6b1184ee637"
+      },
+      {
+        "id": "914acefd-1ef3-4a19-baef-6ccc61b90cc9",
+        "shipment_status": "Pending",
+        "dispatch_date": "2023-10-03T02:58:50.776Z",
+        "arrival_date": "2023-10-03T03:02:26.349Z",
+        "created_at": "2023-10-03T01:22:38.998Z",
+        "updated_at": "2023-10-03T08:46:02.897Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "52eab609-21ab-4fae-8998-e4227d8d7876"
+      }
+    ],
+    "client": [
+      {
+        "id": "630366af-7948-48d7-a99c-50f7e9a30356",
+        "name": "ABC Company",
+        "address": "123 Main Street",
+        "phone": "555-123-4567",
+        "email": "info@abccompany.com",
+        "created_at": "2023-10-02T22:07:17.175Z",
+        "updated_at": "2023-10-03T07:41:38.990Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "cdff55c3-0f73-46d2-8962-5b9db49ec4c7",
+        "name": "XYZ Corporation",
+        "address": "456 Elm Avenue",
+        "phone": "555-987-6543",
+        "email": "contact@xyzcorp.com",
+        "created_at": "2023-10-03T09:24:08.485Z",
+        "updated_at": "2023-10-02T19:59:22.193Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "75311c38-9060-4020-bab5-96918106a98c",
+        "name": "123 Ltd.",
+        "address": "789 Oak Lane",
+        "phone": "555-456-7890",
+        "email": "sales@123ltd.com",
+        "created_at": "2023-10-02T17:08:49.098Z",
+        "updated_at": "2023-10-03T06:49:33.857Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "124ed13d-9d1e-44e6-a39f-cc6dd33382bc",
+        "name": "Acme Enterprises",
+        "address": "10 Maple Road",
+        "phone": "555-321-6548",
+        "email": "support@acmeenterprises.com",
+        "created_at": "2023-10-03T12:41:17.164Z",
+        "updated_at": "2023-10-03T03:28:33.124Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "1a6e1d5e-1820-4f36-ab5a-66f18aab18fc",
+        "name": "Dream Co.",
+        "address": "555 Pine Court",
+        "phone": "555-789-1234",
+        "email": "info@dreamco.com",
+        "created_at": "2023-10-03T05:51:57.462Z",
+        "updated_at": "2023-10-03T09:20:42.093Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "4df5e7f3-cd73-47bc-b8fa-e56b18d3fb07",
+        "email": "May.Schuster38@roq.tech",
+        "firstName": "Elaina",
+        "lastName": "Ondricka",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/997.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "314ca947-9d38-4a1a-a4d4-bf940b059e77",
+        "email": "Minnie52@roq.tech",
+        "firstName": "Marcella",
+        "lastName": "Daniel",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/580.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "0dbc7052-9194-406c-b08e-45d39cbbbe07",
+        "email": "Leda36@roq.tech",
+        "firstName": "Harry",
+        "lastName": "Stanton",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/55244689",
+        "tenantId": null
+      },
+      {
+        "reference": "25874940-34a6-4808-a843-d97973348616",
+        "email": "Marietta43@roq.tech",
+        "firstName": "Jerrold",
+        "lastName": "Robel",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1147.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "886a9895-98ab-46f1-9155-eae6e67c1df1",
+        "email": "Ericka.Macejkovic50@roq.tech",
+        "firstName": "Brett",
+        "lastName": "Moore-Hodkiewicz",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/60068647",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "warehouse": [
+      {
+        "id": "62be2ca1-1094-4def-b0eb-0be47378bcb6",
+        "name": "Warehouse A",
+        "location": "New York",
+        "capacity": 12709,
+        "current_inventory": 89294,
+        "created_at": "2023-10-02T17:29:27.121Z",
+        "updated_at": "2023-10-03T02:36:08.779Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "a11487a3-7834-43d6-bdaa-21b5afc92e09",
+        "name": "Warehouse B",
+        "location": "London",
+        "capacity": 11100,
+        "current_inventory": 10892,
+        "created_at": "2023-10-03T01:10:01.059Z",
+        "updated_at": "2023-10-02T17:57:03.219Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "079c086b-c7fd-4191-8ef7-73591cfb0ea7",
+        "name": "Warehouse C",
+        "location": "Tokyo",
+        "capacity": 75905,
+        "current_inventory": 57795,
+        "created_at": "2023-10-02T13:51:19.391Z",
+        "updated_at": "2023-10-03T00:48:45.958Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "2b2f8c9b-3d95-4fc1-b0bb-734acb0111ba",
+        "name": "Warehouse D",
+        "location": "Sydney",
+        "capacity": 46202,
+        "current_inventory": 22361,
+        "created_at": "2023-10-03T00:14:52.967Z",
+        "updated_at": "2023-10-02T23:38:59.440Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "7f11bad1-ffad-40ed-8af3-8f3dc6ca03ee",
+        "name": "Warehouse E",
+        "location": "Berlin",
+        "capacity": 52150,
+        "current_inventory": 54836,
+        "created_at": "2023-10-02T14:39:08.368Z",
+        "updated_at": "2023-10-02T18:59:16.750Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "325340ca-41cd-44f1-82dd-b08b860ce98c",
+        "product_name": "Product A",
+        "product_description": "High-quality product",
+        "quantity": 35299,
+        "received_date": "2023-10-03T07:48:33.878Z",
+        "created_at": "2023-10-03T11:13:14.020Z",
+        "updated_at": "2023-10-03T10:14:45.964Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "59923e0b-c114-417c-bb72-4787e6f4e381",
+        "product_name": "Product B",
+        "product_description": "Innovative solution",
+        "quantity": 92810,
+        "received_date": "2023-10-02T20:56:51.919Z",
+        "created_at": "2023-10-03T06:22:53.036Z",
+        "updated_at": "2023-10-03T10:05:15.913Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "648b28fc-1561-46e0-9daa-cc042e07f955",
+        "product_name": "Product C",
+        "product_description": "Premium item",
+        "quantity": 1927,
+        "received_date": "2023-10-03T10:54:15.301Z",
+        "created_at": "2023-10-02T17:35:54.118Z",
+        "updated_at": "2023-10-03T07:03:48.437Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "9ae746a5-216b-4da9-b11e-b9aa47a03a20",
+        "product_name": "Product D",
+        "product_description": "Essential tool",
+        "quantity": 49163,
+        "received_date": "2023-10-03T09:48:09.688Z",
+        "created_at": "2023-10-03T00:47:17.619Z",
+        "updated_at": "2023-10-02T14:05:33.939Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "cb622740-bc5a-4a49-856e-4e64f3893941",
+        "product_name": "Product E",
+        "product_description": "Cutting-edge technology",
+        "quantity": 47097,
+        "received_date": "2023-10-03T09:11:30.578Z",
+        "created_at": "2023-10-02T22:26:21.055Z",
+        "updated_at": "2023-10-02T22:37:41.305Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "shipment": [
+      {
+        "id": "0f940c58-9a62-44b7-96dd-4663113b2ea9",
+        "shipment_status": "Pending",
+        "dispatch_date": "2023-10-03T07:41:07.067Z",
+        "arrival_date": "2023-10-02T20:05:28.200Z",
+        "created_at": "2023-10-02T21:27:25.563Z",
+        "updated_at": "2023-10-03T06:53:00.008Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "325340ca-41cd-44f1-82dd-b08b860ce98c"
+      },
+      {
+        "id": "ac9c5b0e-846e-47bc-bbdf-f4fdec2434a8",
+        "shipment_status": "In transit",
+        "dispatch_date": "2023-10-03T05:33:51.897Z",
+        "arrival_date": "2023-10-03T08:35:40.091Z",
+        "created_at": "2023-10-02T17:14:33.886Z",
+        "updated_at": "2023-10-02T14:15:10.553Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "cb622740-bc5a-4a49-856e-4e64f3893941"
+      },
+      {
+        "id": "fda545fd-f049-4bd2-9fe3-59844cbf2186",
+        "shipment_status": "Delivered",
+        "dispatch_date": "2023-10-03T01:53:04.851Z",
+        "arrival_date": "2023-10-02T15:01:42.049Z",
+        "created_at": "2023-10-02T23:49:57.024Z",
+        "updated_at": "2023-10-02T13:12:51.885Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "59923e0b-c114-417c-bb72-4787e6f4e381"
+      },
+      {
+        "id": "da2ed6b1-aa90-4cd1-bef7-cde53b938365",
+        "shipment_status": "Delayed",
+        "dispatch_date": "2023-10-03T11:55:45.205Z",
+        "arrival_date": "2023-10-03T11:20:26.971Z",
+        "created_at": "2023-10-03T00:18:17.517Z",
+        "updated_at": "2023-10-02T22:50:12.623Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "9ae746a5-216b-4da9-b11e-b9aa47a03a20"
+      },
+      {
+        "id": "b71fb586-030c-4ba4-9093-ba7c8ce34a92",
+        "shipment_status": "Cancelled",
+        "dispatch_date": "2023-10-02T18:08:24.121Z",
+        "arrival_date": "2023-10-03T04:19:37.525Z",
+        "created_at": "2023-10-02T22:02:34.518Z",
+        "updated_at": "2023-10-03T00:56:52.389Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "59923e0b-c114-417c-bb72-4787e6f4e381"
+      }
+    ],
+    "client": [
+      {
+        "id": "08b2b0a1-f050-4872-9399-5af8d514589c",
+        "name": "Client A",
+        "address": "123 Main Street",
+        "phone": "123-456-7890",
+        "email": "clientA@example.com",
+        "created_at": "2023-10-03T01:55:55.476Z",
+        "updated_at": "2023-10-03T00:18:43.880Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "aba1d642-0c2f-40ab-9969-ec335b9bdb3a",
+        "name": "Client B",
+        "address": "456 Elm Avenue",
+        "phone": "987-654-3210",
+        "email": "clientB@example.com",
+        "created_at": "2023-10-03T05:15:46.292Z",
+        "updated_at": "2023-10-02T22:41:24.649Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "f615871e-8101-4844-a7c5-cc608db80e6c",
+        "name": "Client C",
+        "address": "789 Oak Drive",
+        "phone": "456-789-1230",
+        "email": "clientC@example.com",
+        "created_at": "2023-10-02T20:21:49.414Z",
+        "updated_at": "2023-10-02T19:59:25.211Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "f88d15e0-467b-4e60-8866-7490cd239f89",
+        "name": "Client D",
+        "address": "321 Pine Lane",
+        "phone": "789-123-4560",
+        "email": "clientD@example.com",
+        "created_at": "2023-10-03T11:27:07.930Z",
+        "updated_at": "2023-10-03T00:29:30.834Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "b92c3a0f-aa4a-493e-b986-a069caf1be61",
+        "name": "Client E",
+        "address": "654 Maple Road",
+        "phone": "321-654-9870",
+        "email": "clientE@example.com",
+        "created_at": "2023-10-02T21:08:53.413Z",
+        "updated_at": "2023-10-02T21:45:43.708Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "cd395ea9-7ae5-449f-be83-e74ff1f45f06",
+        "email": "Carmela41@roq.tech",
+        "firstName": "Stewart",
+        "lastName": "Reichel",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/885.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "df937c67-339e-4d41-957b-9ff0b61da705",
+        "email": "Yasmine.Greenholt51@roq.tech",
+        "firstName": "Marian",
+        "lastName": "Kihn",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/72430089",
+        "tenantId": null
+      },
+      {
+        "reference": "2a615e01-6122-4fc8-a23a-f81cac979438",
+        "email": "Jennings0@roq.tech",
+        "firstName": "Veronica",
+        "lastName": "Leannon-Schuppe",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/963.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "1bc3314c-bfe1-4e5f-afb1-5fe9ed928ec1",
+        "email": "Heath.Spencer@roq.tech",
+        "firstName": "Jesus",
+        "lastName": "Armstrong",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1928549",
+        "tenantId": null
+      },
+      {
+        "reference": "046c0196-1aa3-46c7-b69a-c1f3072a4582",
+        "email": "Jarret_Donnelly27@roq.tech",
+        "firstName": "Gabriella",
+        "lastName": "Berge",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/195.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "warehouse": [
+      {
+        "id": "bcbca700-d56e-44f9-8089-58154bb8273a",
+        "name": "Main Warehouse",
+        "location": "New York",
+        "capacity": 57207,
+        "current_inventory": 78990,
+        "created_at": "2023-10-03T04:02:18.581Z",
+        "updated_at": "2023-10-03T11:14:34.495Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "21c80015-6f03-4f4c-a9bf-6f6257e8230f",
+        "name": "Central Storage",
+        "location": "London",
+        "capacity": 84806,
+        "current_inventory": 73634,
+        "created_at": "2023-10-03T12:24:47.688Z",
+        "updated_at": "2023-10-03T12:43:48.691Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "cc8328f7-db79-4b9d-88f2-a0561ef861f5",
+        "name": "Distribution Center",
+        "location": "Tokyo",
+        "capacity": 21156,
+        "current_inventory": 41668,
+        "created_at": "2023-10-03T05:24:53.954Z",
+        "updated_at": "2023-10-03T07:07:07.956Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "a5367d96-3da0-4d0e-95b7-5448387caab8",
+        "name": "Regional Depot",
+        "location": "Sydney",
+        "capacity": 29384,
+        "current_inventory": 63679,
+        "created_at": "2023-10-03T02:55:07.639Z",
+        "updated_at": "2023-10-02T20:58:10.475Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "bcf0af60-b66e-458b-87c2-4927ec7f3e04",
+        "name": "Logistics Hub",
+        "location": "Berlin",
+        "capacity": 48335,
+        "current_inventory": 29265,
+        "created_at": "2023-10-02T20:48:58.508Z",
+        "updated_at": "2023-10-02T16:32:49.937Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "b1a9617d-fed5-4d98-9186-c52709c111ac",
+        "product_name": "Smartphone",
+        "product_description": "High-performance device with advanced features",
+        "quantity": 93570,
+        "received_date": "2023-10-03T10:04:05.661Z",
+        "created_at": "2023-10-02T13:07:28.729Z",
+        "updated_at": "2023-10-03T12:35:13.267Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "a094b678-4cad-4cef-a9db-c70f75cda856",
+        "product_name": "Laptop",
+        "product_description": "Sleek and lightweight design for portability",
+        "quantity": 56586,
+        "received_date": "2023-10-02T16:27:27.844Z",
+        "created_at": "2023-10-02T20:21:04.215Z",
+        "updated_at": "2023-10-02T16:41:39.385Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "35fb0d6e-9a0e-43cc-af4a-f7f1187037b5",
+        "product_name": "Headphones",
+        "product_description": "Immersive sound quality for an enhanced audio experience",
+        "quantity": 96300,
+        "received_date": "2023-10-02T22:59:20.654Z",
+        "created_at": "2023-10-02T23:30:53.983Z",
+        "updated_at": "2023-10-03T03:42:43.747Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "6457e99b-147f-4a09-860d-135dc1cc8fe8",
+        "product_name": "Camera",
+        "product_description": "Capture stunning photos and videos with ease",
+        "quantity": 95290,
+        "received_date": "2023-10-02T19:55:57.394Z",
+        "created_at": "2023-10-03T03:03:39.593Z",
+        "updated_at": "2023-10-02T13:59:27.176Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "e35cff8a-8bdf-4ac7-8b58-cf885e4ebd44",
+        "product_name": "Smartwatch",
+        "product_description": "Stay connected and track your fitness goals",
+        "quantity": 50193,
+        "received_date": "2023-10-03T12:40:47.064Z",
+        "created_at": "2023-10-03T11:08:38.141Z",
+        "updated_at": "2023-10-03T03:57:20.159Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "shipment": [
+      {
+        "id": "4979dca2-aa96-4f6a-9b11-58760749e0d6",
+        "shipment_status": "In Transit",
+        "dispatch_date": "2023-10-03T09:15:40.475Z",
+        "arrival_date": "2023-10-03T07:44:10.672Z",
+        "created_at": "2023-10-03T03:23:42.033Z",
+        "updated_at": "2023-10-03T08:02:16.023Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "6457e99b-147f-4a09-860d-135dc1cc8fe8"
+      },
+      {
+        "id": "e52bf253-0559-42a6-9ee6-42558b37223b",
+        "shipment_status": "Delivered",
+        "dispatch_date": "2023-10-03T07:47:48.654Z",
+        "arrival_date": "2023-10-02T20:37:09.875Z",
+        "created_at": "2023-10-03T01:02:24.041Z",
+        "updated_at": "2023-10-03T10:54:40.694Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "6457e99b-147f-4a09-860d-135dc1cc8fe8"
+      },
+      {
+        "id": "0d4ebd55-0175-4664-8e4d-b15093433caa",
+        "shipment_status": "Out for Delivery",
+        "dispatch_date": "2023-10-03T11:29:40.864Z",
+        "arrival_date": "2023-10-02T15:49:12.495Z",
+        "created_at": "2023-10-02T21:23:38.356Z",
+        "updated_at": "2023-10-02T18:25:22.148Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "6457e99b-147f-4a09-860d-135dc1cc8fe8"
+      },
+      {
+        "id": "fdd669f7-5956-4b6f-b561-014d2391dee1",
+        "shipment_status": "Arrived at Destination",
+        "dispatch_date": "2023-10-03T04:14:53.337Z",
+        "arrival_date": "2023-10-02T17:07:59.161Z",
+        "created_at": "2023-10-02T13:26:46.908Z",
+        "updated_at": "2023-10-02T16:21:32.327Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "6457e99b-147f-4a09-860d-135dc1cc8fe8"
+      },
+      {
+        "id": "39233bba-0834-49bf-aa97-5470069ee308",
+        "shipment_status": "Customs Clearance",
+        "dispatch_date": "2023-10-03T11:03:15.950Z",
+        "arrival_date": "2023-10-03T09:28:56.098Z",
+        "created_at": "2023-10-03T02:39:33.617Z",
+        "updated_at": "2023-10-03T03:51:53.318Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "b1a9617d-fed5-4d98-9186-c52709c111ac"
+      }
+    ],
+    "client": [
+      {
+        "id": "482a73b3-f8eb-4925-b6b6-ac274bb5acd8",
+        "name": "ABC Company",
+        "address": "123 Main Street",
+        "phone": "123-456-7890",
+        "email": "info@abccompany.com",
+        "created_at": "2023-10-02T17:04:53.582Z",
+        "updated_at": "2023-10-02T17:43:02.304Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "00d1204b-cc63-4640-8349-e6d6765ffe62",
+        "name": "XYZ Corporation",
+        "address": "456 Park Avenue",
+        "phone": "555-123-4567",
+        "email": "contact@xyzcorp.com",
+        "created_at": "2023-10-03T03:13:28.765Z",
+        "updated_at": "2023-10-03T07:40:56.883Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "05c0e3ed-1dc9-4d80-b880-6bc3b5a2363c",
+        "name": "Acme Ltd.",
+        "address": "789 Elm Road",
+        "phone": "987-654-3210",
+        "email": "sales@acmeltd.com",
+        "created_at": "2023-10-03T11:21:17.639Z",
+        "updated_at": "2023-10-03T10:38:33.485Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "2e3929ee-cf95-45d6-adcb-face7c29a81b",
+        "name": "Tech Solutions",
+        "address": "101 Oak Lane",
+        "phone": "888-999-0000",
+        "email": "support@techsolutions.com",
+        "created_at": "2023-10-02T19:25:03.943Z",
+        "updated_at": "2023-10-03T00:51:15.087Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "a218451b-a754-4b5f-a01b-b6f8f4c90a3a",
+        "name": "Global Services",
+        "address": "202 Maple Court",
+        "phone": "111-222-3333",
+        "email": "info@globalservices.com",
+        "created_at": "2023-10-02T15:02:51.366Z",
+        "updated_at": "2023-10-02T20:07:05.476Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "e2b04ee5-3b91-41d3-9769-b11199208c56",
+        "email": "Glennie.Jast@roq.tech",
+        "firstName": "Sadye",
+        "lastName": "Fay",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/4770305",
+        "tenantId": null
+      },
+      {
+        "reference": "dc06264f-d194-45ac-ac7b-f453d8c903d5",
+        "email": "Alan_Muller@roq.tech",
+        "firstName": "Coleman",
+        "lastName": "Jenkins",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/315.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "9ffe67d8-e9b0-4e63-86d4-30d37b0ff09e",
+        "email": "Callie_Treutel82@roq.tech",
+        "firstName": "Maryjane",
+        "lastName": "Haley",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/96825868",
+        "tenantId": null
+      },
+      {
+        "reference": "86b19ffe-37c7-41fc-9e39-90b5eede92e7",
+        "email": "Maiya_Terry@roq.tech",
+        "firstName": "Tabitha",
+        "lastName": "Little",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/12875217",
+        "tenantId": null
+      },
+      {
+        "reference": "5e58ba5d-350f-4acc-b5ef-a4d1cf6ac1bd",
+        "email": "Nina.Hahn98@roq.tech",
+        "firstName": "Alexa",
+        "lastName": "O'Reilly",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/93143825",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "warehouse": [
+      {
+        "id": "8178eea4-eeff-48f1-88aa-9481d0160778",
+        "name": "Main Warehouse",
+        "location": "New York",
+        "capacity": 77207,
+        "current_inventory": 62500,
+        "created_at": "2023-10-03T01:27:14.937Z",
+        "updated_at": "2023-10-02T14:13:52.726Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "ac48dcd8-4932-485c-a085-e633836faee2",
+        "name": "Central Storage",
+        "location": "Los Angeles",
+        "capacity": 22689,
+        "current_inventory": 14889,
+        "created_at": "2023-10-02T20:35:38.988Z",
+        "updated_at": "2023-10-02T13:23:57.376Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "49a70bc2-623e-4997-bc88-aae3dc6492c2",
+        "name": "Distribution Center",
+        "location": "Chicago",
+        "capacity": 51110,
+        "current_inventory": 63001,
+        "created_at": "2023-10-03T01:55:16.169Z",
+        "updated_at": "2023-10-02T22:44:53.870Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "54e603cb-271b-4b4f-9c7c-60bf493969bf",
+        "name": "Regional Depot",
+        "location": "Houston",
+        "capacity": 17227,
+        "current_inventory": 66345,
+        "created_at": "2023-10-03T10:46:19.563Z",
+        "updated_at": "2023-10-03T08:27:05.125Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "e277f469-fb95-40b7-9e8c-852a9447f673",
+        "name": "Logistics Hub",
+        "location": "Miami",
+        "capacity": 90286,
+        "current_inventory": 84976,
+        "created_at": "2023-10-03T10:20:42.020Z",
+        "updated_at": "2023-10-02T20:37:06.969Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "ce986932-5802-4b83-b210-2afdd7aff1d3",
+        "product_name": "Smartphone",
+        "product_description": "High-performance device with advanced features",
+        "quantity": 81410,
+        "received_date": "2023-10-02T16:56:44.382Z",
+        "created_at": "2023-10-03T08:19:05.349Z",
+        "updated_at": "2023-10-03T10:24:44.608Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "a924698c-9937-43b5-aa0d-f851690dba0a",
+        "product_name": "Laptop",
+        "product_description": "Portable computer for professional use",
+        "quantity": 46847,
+        "received_date": "2023-10-03T07:56:13.371Z",
+        "created_at": "2023-10-02T23:16:38.345Z",
+        "updated_at": "2023-10-03T11:32:21.279Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "d68dab97-b344-40fa-bc1c-46bcdbe9ef02",
+        "product_name": "Headphones",
+        "product_description": "Premium audio accessory for immersive sound experience",
+        "quantity": 61151,
+        "received_date": "2023-10-03T01:22:52.988Z",
+        "created_at": "2023-10-03T03:40:58.414Z",
+        "updated_at": "2023-10-02T18:13:47.169Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "4c584150-fdeb-4386-a9f7-b742e7eeb7d2",
+        "product_name": "Smart Watch",
+        "product_description": "Wearable device with fitness tracking capabilities",
+        "quantity": 64916,
+        "received_date": "2023-10-02T23:07:15.307Z",
+        "created_at": "2023-10-02T12:59:35.852Z",
+        "updated_at": "2023-10-02T17:26:36.164Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "0d83d0c0-0fa8-448f-af1a-6a5c8d580233",
+        "product_name": "Wireless Speaker",
+        "product_description": "Wireless speaker for superior audio quality",
+        "quantity": 28639,
+        "received_date": "2023-10-03T09:45:44.746Z",
+        "created_at": "2023-10-02T16:44:45.875Z",
+        "updated_at": "2023-10-03T08:06:09.283Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "shipment": [
+      {
+        "id": "2608a70b-3bdf-4061-82ae-d767184864a0",
+        "shipment_status": "In Transit",
+        "dispatch_date": "2023-10-03T09:33:40.547Z",
+        "arrival_date": "2023-10-03T00:22:25.484Z",
+        "created_at": "2023-10-02T20:16:33.500Z",
+        "updated_at": "2023-10-02T18:08:57.012Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "d68dab97-b344-40fa-bc1c-46bcdbe9ef02"
+      },
+      {
+        "id": "a6f68fc9-8caa-4e29-a389-0a61bb91daa1",
+        "shipment_status": "Out for Delivery",
+        "dispatch_date": "2023-10-03T06:02:45.628Z",
+        "arrival_date": "2023-10-02T14:22:48.534Z",
+        "created_at": "2023-10-03T12:33:06.485Z",
+        "updated_at": "2023-10-03T11:44:19.920Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "ce986932-5802-4b83-b210-2afdd7aff1d3"
+      },
+      {
+        "id": "f5b1b849-8972-4fff-bb75-477ddab3c1bf",
+        "shipment_status": "Delivered",
+        "dispatch_date": "2023-10-03T04:27:50.576Z",
+        "arrival_date": "2023-10-03T10:39:17.338Z",
+        "created_at": "2023-10-03T03:38:32.828Z",
+        "updated_at": "2023-10-03T09:08:28.642Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "a924698c-9937-43b5-aa0d-f851690dba0a"
+      },
+      {
+        "id": "fd34e537-8a3b-45e4-9e0f-3f1e01e28b90",
+        "shipment_status": "Delayed",
+        "dispatch_date": "2023-10-03T11:56:37.587Z",
+        "arrival_date": "2023-10-03T04:31:34.713Z",
+        "created_at": "2023-10-02T21:31:07.368Z",
+        "updated_at": "2023-10-03T09:02:00.303Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "4c584150-fdeb-4386-a9f7-b742e7eeb7d2"
+      },
+      {
+        "id": "d7121825-4ce3-4b39-b4b8-14be957c5b23",
+        "shipment_status": "On Hold",
+        "dispatch_date": "2023-10-02T19:04:12.955Z",
+        "arrival_date": "2023-10-03T11:01:06.798Z",
+        "created_at": "2023-10-02T14:54:30.774Z",
+        "updated_at": "2023-10-02T19:00:40.554Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "4c584150-fdeb-4386-a9f7-b742e7eeb7d2"
+      }
+    ],
+    "client": [
+      {
+        "id": "992bfc0d-d042-4e4c-ad95-48e2aa410379",
+        "name": "ABC Company",
+        "address": "123 Main Street",
+        "phone": "(123) 456-7890",
+        "email": "info@abccompany.com",
+        "created_at": "2023-10-02T22:47:42.312Z",
+        "updated_at": "2023-10-02T23:21:31.654Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "f50e6c3c-f220-4319-a30d-be2f8ac5eefb",
+        "name": "XYZ Corporation",
+        "address": "456 Elm Avenue",
+        "phone": "(987) 654-3210",
+        "email": "contact@xyzcorp.com",
+        "created_at": "2023-10-03T06:50:19.468Z",
+        "updated_at": "2023-10-02T15:14:17.610Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "f98eac55-a0e0-43c6-8013-82500244f49d",
+        "name": "123 Enterprises",
+        "address": "789 Oak Lane",
+        "phone": "(555) 123-4567",
+        "email": "sales@123enterprises.com",
+        "created_at": "2023-10-02T15:14:58.899Z",
+        "updated_at": "2023-10-02T13:07:43.395Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "9c429d07-b14f-4e7f-9798-0103bf754930",
+        "name": "Global Inc.",
+        "address": "10 Pine Road",
+        "phone": "(999) 888-7777",
+        "email": "support@globalinc.com",
+        "created_at": "2023-10-02T18:42:25.825Z",
+        "updated_at": "2023-10-02T14:34:24.449Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "4c881aa5-30ae-4540-9490-bb873b81a050",
+        "name": "Tech Innovations",
+        "address": "11 Maple Court",
+        "phone": "(444) 555-6666",
+        "email": "info@techinnovations.com",
+        "created_at": "2023-10-03T10:28:07.575Z",
+        "updated_at": "2023-10-02T19:43:48.986Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "64d8388d-ec88-4e3d-8d80-92d97ba15d80",
+        "email": "Melvina.Glover@roq.tech",
+        "firstName": "Kristopher",
+        "lastName": "Bartell",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/96580359",
+        "tenantId": null
+      },
+      {
+        "reference": "a03729ff-7efb-4a62-b226-b796e3e526ed",
+        "email": "Travon.Yost@roq.tech",
+        "firstName": "Orpha",
+        "lastName": "Hodkiewicz",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/24576334",
+        "tenantId": null
+      },
+      {
+        "reference": "16744cd4-87ca-4705-b6d6-6d08737aeb9a",
+        "email": "Mollie.Crooks@roq.tech",
+        "firstName": "Quincy",
+        "lastName": "Larkin",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/107.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "989afaa2-00c5-4c07-ba7b-3b079eb64112",
+        "email": "Claud.Fadel-Brekke@roq.tech",
+        "firstName": "Kaleigh",
+        "lastName": "Grant-O'Kon",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/52968632",
+        "tenantId": null
+      },
+      {
+        "reference": "c546e3c9-2d16-4012-83e0-8a07d62b36f9",
+        "email": "Josiane.Douglas19@roq.tech",
+        "firstName": "Marcellus",
+        "lastName": "Pouros",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/526.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "warehouse": [
+      {
+        "id": "201928f1-dc56-4916-89c2-721887659a6d",
+        "name": "Main Warehouse",
+        "location": "New York",
+        "capacity": 9198,
+        "current_inventory": 36680,
+        "created_at": "2023-10-02T14:10:58.868Z",
+        "updated_at": "2023-10-03T03:16:14.103Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "d122df75-be88-4bef-9cae-b49de6068d8f",
+        "name": "Central Distribution Center",
+        "location": "Los Angeles",
+        "capacity": 90963,
+        "current_inventory": 54039,
+        "created_at": "2023-10-02T13:22:57.401Z",
+        "updated_at": "2023-10-03T10:58:11.095Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "31833a2d-119c-49e2-8fab-bf85927f94c4",
+        "name": "Regional Storage Facility",
+        "location": "Chicago",
+        "capacity": 18230,
+        "current_inventory": 30823,
+        "created_at": "2023-10-02T20:38:41.542Z",
+        "updated_at": "2023-10-03T09:54:45.068Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "aaa13f74-5328-4aa7-90a6-ba78b922860a",
+        "name": "Logistics Hub",
+        "location": "Houston",
+        "capacity": 50665,
+        "current_inventory": 79270,
+        "created_at": "2023-10-02T23:38:53.817Z",
+        "updated_at": "2023-10-02T20:40:18.286Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "0af1a4eb-e6f9-4809-94fb-446a2e9b8d2f",
+        "name": "Inventory Depot",
+        "location": "Miami",
+        "capacity": 88650,
+        "current_inventory": 22034,
+        "created_at": "2023-10-02T17:58:13.631Z",
+        "updated_at": "2023-10-03T02:17:07.720Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "053d9748-6560-48da-856c-4e9f420cd6f7",
+        "product_name": "Widget A",
+        "product_description": "High-quality and durable",
+        "quantity": 55480,
+        "received_date": "2023-10-03T05:32:18.367Z",
+        "created_at": "2023-10-03T06:30:42.429Z",
+        "updated_at": "2023-10-03T00:44:44.500Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "b0b5af06-df6c-4c04-b100-ad4546db7da8",
+        "product_name": "Gadget B",
+        "product_description": "Cutting-edge technology",
+        "quantity": 36159,
+        "received_date": "2023-10-02T15:31:45.644Z",
+        "created_at": "2023-10-03T02:04:04.044Z",
+        "updated_at": "2023-10-02T22:22:51.543Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "3607fe35-9560-4ac1-a642-bb25c0d07995",
+        "product_name": "Tool C",
+        "product_description": "Versatile and efficient",
+        "quantity": 63846,
+        "received_date": "2023-10-03T11:26:13.615Z",
+        "created_at": "2023-10-03T03:29:59.221Z",
+        "updated_at": "2023-10-03T09:01:05.030Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "ad293712-55e3-47a6-898c-832cd2207bc3",
+        "product_name": "Device D",
+        "product_description": "Reliable performance",
+        "quantity": 15800,
+        "received_date": "2023-10-02T18:23:41.775Z",
+        "created_at": "2023-10-03T10:37:37.209Z",
+        "updated_at": "2023-10-02T15:11:09.973Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "f8ded1ce-30fd-4707-8995-ba03a4f6f386",
+        "product_name": "Equipment E",
+        "product_description": "Innovative design",
+        "quantity": 84413,
+        "received_date": "2023-10-02T23:26:05.693Z",
+        "created_at": "2023-10-03T02:14:02.304Z",
+        "updated_at": "2023-10-02T19:58:26.747Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "shipment": [
+      {
+        "id": "28858abe-81fd-436e-803b-64263d14fcee",
+        "shipment_status": "In Transit",
+        "dispatch_date": "2023-10-03T02:00:32.503Z",
+        "arrival_date": "2023-10-02T21:57:51.948Z",
+        "created_at": "2023-10-02T18:00:49.014Z",
+        "updated_at": "2023-10-02T16:32:28.527Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "053d9748-6560-48da-856c-4e9f420cd6f7"
+      },
+      {
+        "id": "20abdb76-31e2-476d-bc5d-9b251a07c96b",
+        "shipment_status": "Delivered",
+        "dispatch_date": "2023-10-02T16:08:21.573Z",
+        "arrival_date": "2023-10-02T22:51:03.152Z",
+        "created_at": "2023-10-03T07:49:34.405Z",
+        "updated_at": "2023-10-02T16:03:08.557Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "053d9748-6560-48da-856c-4e9f420cd6f7"
+      },
+      {
+        "id": "ecb7c79f-53ad-44d3-a600-862282eda307",
+        "shipment_status": "Out for Delivery",
+        "dispatch_date": "2023-10-02T21:10:54.015Z",
+        "arrival_date": "2023-10-03T05:12:24.559Z",
+        "created_at": "2023-10-02T15:19:07.106Z",
+        "updated_at": "2023-10-03T10:23:32.495Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "053d9748-6560-48da-856c-4e9f420cd6f7"
+      },
+      {
+        "id": "33e75672-a0f5-4d20-a24c-4314d693f6e8",
+        "shipment_status": "Arrived at Destination",
+        "dispatch_date": "2023-10-02T23:58:21.366Z",
+        "arrival_date": "2023-10-03T08:23:42.583Z",
+        "created_at": "2023-10-03T08:41:17.960Z",
+        "updated_at": "2023-10-02T22:45:30.553Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "053d9748-6560-48da-856c-4e9f420cd6f7"
+      },
+      {
+        "id": "ab079d83-76bc-457d-91ab-e752856e6685",
+        "shipment_status": "Pending Shipment",
+        "dispatch_date": "2023-10-02T23:34:42.120Z",
+        "arrival_date": "2023-10-03T03:29:22.265Z",
+        "created_at": "2023-10-03T01:38:03.568Z",
+        "updated_at": "2023-10-03T11:24:32.513Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "ad293712-55e3-47a6-898c-832cd2207bc3"
+      }
+    ],
+    "client": [
+      {
+        "id": "89a3e49e-0604-4d38-9d62-347771bbba15",
+        "name": "ABC Corp.",
+        "address": "123 Main St",
+        "phone": "(123) 456-7890",
+        "email": "info@abccorp.com",
+        "created_at": "2023-10-02T22:48:09.192Z",
+        "updated_at": "2023-10-03T07:56:21.403Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "41e89144-a298-4c2d-ac30-42504f784539",
+        "name": "XYZ Ltd.",
+        "address": "456 Elm Ave",
+        "phone": "(987) 654-3210",
+        "email": "sales@xyzltd.com",
+        "created_at": "2023-10-02T15:06:08.542Z",
+        "updated_at": "2023-10-03T12:21:56.779Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "481c9901-30ff-40bc-8669-39c88a64402f",
+        "name": "123 Inc.",
+        "address": "789 Oak Ln",
+        "phone": "(555) 123-4567",
+        "email": "support@123inc.com",
+        "created_at": "2023-10-03T00:51:30.380Z",
+        "updated_at": "2023-10-03T06:28:25.331Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "7cc05cca-5497-4adc-bf50-087962366579",
+        "name": "Acme Enterprises",
+        "address": "10 Pine Rd",
+        "phone": "(888) 999-0000",
+        "email": "contact@acmeenterprises.com",
+        "created_at": "2023-10-03T01:00:05.390Z",
+        "updated_at": "2023-10-03T03:26:41.774Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "60a3d226-903c-4604-a8f0-595787befa54",
+        "name": "Global Solutions",
+        "address": "555 Maple Dr",
+        "phone": "(111) 222-3333",
+        "email": "info@globalsolutions.com",
+        "created_at": "2023-10-02T17:26:40.510Z",
+        "updated_at": "2023-10-03T03:27:36.769Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "0ddc24da-e16c-4ab2-8f31-cbe8b7573e7d",
+        "email": "Keven.Goodwin@roq.tech",
+        "firstName": "Simone",
+        "lastName": "Beier",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8390271",
+        "tenantId": null
+      },
+      {
+        "reference": "635fbb39-3e24-4c26-9dd8-376bcc451acb",
+        "email": "Katharina.Hickle@roq.tech",
+        "firstName": "Howell",
+        "lastName": "Lynch",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/42.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "affb5bbd-d31f-4bd9-8565-2af2c5a0cb4a",
+        "email": "Milton_Bode84@roq.tech",
+        "firstName": "Edgar",
+        "lastName": "Bosco",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/828.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "5cccfaf0-a36b-40ea-81b2-075437aa2820",
+        "email": "Marquise.Frami@roq.tech",
+        "firstName": "Aliya",
+        "lastName": "Cormier",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/426.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "b8d54861-1da1-4244-84cd-6868d24043e2",
+        "email": "Gladyce_Gottlieb@roq.tech",
+        "firstName": "Lowell",
+        "lastName": "Hermiston",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/79663084",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "warehouse": [
+      {
+        "id": "c330cbe7-4c3a-45f7-8c8d-507cb3d8e987",
+        "name": "Main Warehouse",
+        "location": "New York",
+        "capacity": 78483,
+        "current_inventory": 4875,
+        "created_at": "2023-10-03T03:56:36.965Z",
+        "updated_at": "2023-10-03T00:49:04.311Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "921a4683-b922-45c6-8675-82c7273b49e2",
+        "name": "Central Storage",
+        "location": "Los Angeles",
+        "capacity": 68276,
+        "current_inventory": 78122,
+        "created_at": "2023-10-03T08:15:29.907Z",
+        "updated_at": "2023-10-03T08:06:46.100Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "83528a98-f1d2-4aa6-af7a-04485e733417",
+        "name": "Distribution Center",
+        "location": "Chicago",
+        "capacity": 9745,
+        "current_inventory": 977,
+        "created_at": "2023-10-03T04:21:28.693Z",
+        "updated_at": "2023-10-03T08:03:39.921Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "2b45a9b4-f1c1-4478-a174-3ec7f61fcb7c",
+        "name": "Regional Warehouse",
+        "location": "Houston",
+        "capacity": 89842,
+        "current_inventory": 90636,
+        "created_at": "2023-10-02T21:21:54.934Z",
+        "updated_at": "2023-10-02T14:55:34.063Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "8f7fe66c-43f3-42c0-827c-4545c0aa61ce",
+        "name": "Logistics Hub",
+        "location": "Miami",
+        "capacity": 83109,
+        "current_inventory": 45354,
+        "created_at": "2023-10-03T04:27:36.546Z",
+        "updated_at": "2023-10-02T17:27:55.979Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "cd5868cb-6681-4de2-aacc-4953de5a5554",
+        "product_name": "Widget A",
+        "product_description": "High-quality widget for everyday use",
+        "quantity": 98352,
+        "received_date": "2023-10-03T06:30:44.817Z",
+        "created_at": "2023-10-03T01:00:41.484Z",
+        "updated_at": "2023-10-03T09:08:39.810Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "75807dce-bb01-4b3f-b055-57cc9cbd3c92",
+        "product_name": "Gadget B",
+        "product_description": "Innovative gadget with advanced features",
+        "quantity": 19138,
+        "received_date": "2023-10-02T16:18:13.088Z",
+        "created_at": "2023-10-02T16:07:59.826Z",
+        "updated_at": "2023-10-02T21:29:45.804Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "e35cd946-2f59-4437-8ae4-b165931c7b12",
+        "product_name": "Tool C",
+        "product_description": "Versatile tool for various applications",
+        "quantity": 44397,
+        "received_date": "2023-10-03T01:51:37.993Z",
+        "created_at": "2023-10-03T00:53:37.116Z",
+        "updated_at": "2023-10-02T14:26:01.440Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "f4d289c2-cebc-4803-972a-40269bc5080b",
+        "product_name": "Device D",
+        "product_description": "Cutting-edge device for professional use",
+        "quantity": 21810,
+        "received_date": "2023-10-03T08:50:55.653Z",
+        "created_at": "2023-10-03T01:23:36.435Z",
+        "updated_at": "2023-10-03T08:04:58.495Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "5c58412d-ff23-4e92-b5d0-edd852315f83",
+        "product_name": "Equipment E",
+        "product_description": "Durable equipment for industrial purposes",
+        "quantity": 43060,
+        "received_date": "2023-10-03T05:57:08.976Z",
+        "created_at": "2023-10-03T10:14:19.401Z",
+        "updated_at": "2023-10-02T12:59:09.238Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "shipment": [
+      {
+        "id": "9c8f53a2-a177-4db9-a64d-d9faa201edc9",
+        "shipment_status": "In Transit",
+        "dispatch_date": "2023-10-02T15:19:08.664Z",
+        "arrival_date": "2023-10-02T17:59:17.747Z",
+        "created_at": "2023-10-03T12:01:08.594Z",
+        "updated_at": "2023-10-03T04:16:02.323Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "f4d289c2-cebc-4803-972a-40269bc5080b"
+      },
+      {
+        "id": "c117b073-5a95-4d9d-a11a-f1e2f25f3d29",
+        "shipment_status": "Delivered",
+        "dispatch_date": "2023-10-03T06:49:33.559Z",
+        "arrival_date": "2023-10-02T20:23:09.109Z",
+        "created_at": "2023-10-02T19:45:11.304Z",
+        "updated_at": "2023-10-03T00:19:28.820Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "5c58412d-ff23-4e92-b5d0-edd852315f83"
+      },
+      {
+        "id": "4f9d3bb2-0849-49a6-8176-71f09a4f337d",
+        "shipment_status": "Out for Delivery",
+        "dispatch_date": "2023-10-02T22:10:18.339Z",
+        "arrival_date": "2023-10-02T18:00:08.831Z",
+        "created_at": "2023-10-03T06:24:29.257Z",
+        "updated_at": "2023-10-02T14:43:55.886Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "cd5868cb-6681-4de2-aacc-4953de5a5554"
+      },
+      {
+        "id": "f64ba157-f400-4d59-af41-060a69ec5e73",
+        "shipment_status": "Arrived at Destination",
+        "dispatch_date": "2023-10-02T23:56:25.624Z",
+        "arrival_date": "2023-10-03T12:15:00.530Z",
+        "created_at": "2023-10-02T18:13:46.918Z",
+        "updated_at": "2023-10-03T02:24:36.347Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "5c58412d-ff23-4e92-b5d0-edd852315f83"
+      },
+      {
+        "id": "5037320b-bdcb-468d-aaca-88fb1b062118",
+        "shipment_status": "On Hold",
+        "dispatch_date": "2023-10-02T19:42:39.767Z",
+        "arrival_date": "2023-10-03T09:49:10.691Z",
+        "created_at": "2023-10-03T10:04:28.570Z",
+        "updated_at": "2023-10-03T12:19:12.058Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "5c58412d-ff23-4e92-b5d0-edd852315f83"
+      }
+    ],
+    "client": [
+      {
+        "id": "f35a4cf8-19b9-4149-84c7-2a787095b3b9",
+        "name": "ABC Company",
+        "address": "123 Main Street",
+        "phone": "(123) 456-7890",
+        "email": "info@abccompany.com",
+        "created_at": "2023-10-03T00:06:26.054Z",
+        "updated_at": "2023-10-03T09:37:57.400Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "9e2a7b04-bda3-4098-9414-7d10edb8321c",
+        "name": "XYZ Corporation",
+        "address": "456 Elm Avenue",
+        "phone": "(987) 654-3210",
+        "email": "contact@xyzcorp.com",
+        "created_at": "2023-10-02T17:53:16.187Z",
+        "updated_at": "2023-10-02T20:49:59.347Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "62478dde-97ae-4003-b577-4fd1e826e378",
+        "name": "123 Enterprises",
+        "address": "789 Oak Drive",
+        "phone": "(555) 123-4567",
+        "email": "sales@123enterprises.com",
+        "created_at": "2023-10-03T08:50:12.970Z",
+        "updated_at": "2023-10-02T21:56:31.834Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "705ae113-e1c5-4d6e-86d5-d8510ff370e1",
+        "name": "Global Solutions",
+        "address": "321 Pine Lane",
+        "phone": "(888) 999-0000",
+        "email": "support@globalsolutions.com",
+        "created_at": "2023-10-03T09:26:14.312Z",
+        "updated_at": "2023-10-03T11:40:37.521Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "0ada2917-ee23-471a-b132-f988aca7074a",
+        "name": "Innovative Technologies",
+        "address": "654 Maple Road",
+        "phone": "(111) 222-3333",
+        "email": "info@innovativetech.com",
+        "created_at": "2023-10-03T10:16:08.091Z",
+        "updated_at": "2023-10-02T18:28:11.537Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "71214874-75c7-4aa0-b877-d886791bd610",
+        "email": "Cesar55@roq.tech",
+        "firstName": "Xzavier",
+        "lastName": "Hoeger",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1146.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "8c0503ac-cc7f-4b1e-b59e-c7e55fcb0310",
+        "email": "Haylee.Jacobson48@roq.tech",
+        "firstName": "Flossie",
+        "lastName": "Volkman",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/497.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "85999b79-1e54-4b47-9845-8c7aa5d480d4",
+        "email": "Trisha_Tillman42@roq.tech",
+        "firstName": "Christa",
+        "lastName": "Jaskolski",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/67171564",
+        "tenantId": null
+      },
+      {
+        "reference": "8ac59f10-0c53-4c0e-ac21-68eb07bae700",
+        "email": "Waino.Raynor68@roq.tech",
+        "firstName": "Jayda",
+        "lastName": "Gislason",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/70757051",
+        "tenantId": null
+      },
+      {
+        "reference": "1f275989-3749-45cc-9594-4e5fc7de8190",
+        "email": "Patsy59@roq.tech",
+        "firstName": "Joannie",
+        "lastName": "Schroeder",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/37787441",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "warehouse": [
+      {
+        "id": "ec9c688f-5813-41b0-8d8c-bfeaa2d98644",
+        "name": "Warehouse A",
+        "location": "New York",
+        "capacity": 28809,
+        "current_inventory": 21560,
+        "created_at": "2023-10-02T16:06:18.477Z",
+        "updated_at": "2023-10-03T08:48:19.543Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "dbbd5105-29ca-4877-ab23-ee5354eb1557",
+        "name": "Warehouse B",
+        "location": "Los Angeles",
+        "capacity": 50390,
+        "current_inventory": 6671,
+        "created_at": "2023-10-03T04:48:50.514Z",
+        "updated_at": "2023-10-03T11:55:31.032Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "00afbe96-913d-4b3e-82ed-ca3637f21630",
+        "name": "Warehouse C",
+        "location": "Chicago",
+        "capacity": 15243,
+        "current_inventory": 93898,
+        "created_at": "2023-10-03T07:38:30.105Z",
+        "updated_at": "2023-10-03T05:21:57.703Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "0bd7bc6c-95bd-4f1d-8b4f-6193a24700ce",
+        "name": "Warehouse D",
+        "location": "Houston",
+        "capacity": 82912,
+        "current_inventory": 4311,
+        "created_at": "2023-10-03T03:21:13.864Z",
+        "updated_at": "2023-10-02T14:59:00.570Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "e48caf50-e56b-49aa-a2b6-4d0198e8a46f",
+        "name": "Warehouse E",
+        "location": "Miami",
+        "capacity": 41852,
+        "current_inventory": 37559,
+        "created_at": "2023-10-02T17:56:58.750Z",
+        "updated_at": "2023-10-02T17:17:39.582Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "b5c12efc-c055-4d76-baf2-d8619c93e20c",
+        "product_name": "Product A",
+        "product_description": "A high-quality product",
+        "quantity": 76226,
+        "received_date": "2023-10-03T00:26:42.458Z",
+        "created_at": "2023-10-02T21:48:54.293Z",
+        "updated_at": "2023-10-02T15:22:54.561Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "a08aee20-25b3-4302-8463-49ead4e07495",
+        "product_name": "Product B",
+        "product_description": "An innovative solution",
+        "quantity": 78675,
+        "received_date": "2023-10-02T14:57:36.197Z",
+        "created_at": "2023-10-02T12:59:19.883Z",
+        "updated_at": "2023-10-02T13:10:31.222Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "9b690ea4-18ad-43fb-84ea-324631a3330a",
+        "product_name": "Product C",
+        "product_description": "A reliable tool",
+        "quantity": 44707,
+        "received_date": "2023-10-02T17:42:45.546Z",
+        "created_at": "2023-10-02T20:40:11.558Z",
+        "updated_at": "2023-10-02T20:32:18.845Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "f31a6825-f17e-4b0f-97a8-e08c73947aaf",
+        "product_name": "Product D",
+        "product_description": "A versatile device",
+        "quantity": 88695,
+        "received_date": "2023-10-03T07:23:40.296Z",
+        "created_at": "2023-10-03T00:43:09.955Z",
+        "updated_at": "2023-10-03T11:06:22.761Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "427204c9-c397-44fb-a0cc-e6778c1a4699",
+        "product_name": "Product E",
+        "product_description": "A cutting-edge technology",
+        "quantity": 26995,
+        "received_date": "2023-10-02T23:11:29.268Z",
+        "created_at": "2023-10-02T15:37:21.468Z",
+        "updated_at": "2023-10-02T16:17:29.595Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "shipment": [
+      {
+        "id": "89973fc0-e735-4c58-adaf-97e9a2f7140b",
+        "shipment_status": "Pending",
+        "dispatch_date": "2023-10-02T22:32:07.081Z",
+        "arrival_date": "2023-10-02T23:35:36.798Z",
+        "created_at": "2023-10-03T10:47:01.442Z",
+        "updated_at": "2023-10-03T01:42:04.058Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "b5c12efc-c055-4d76-baf2-d8619c93e20c"
+      },
+      {
+        "id": "6fa61944-d849-47b6-b999-25254b05c146",
+        "shipment_status": "In Transit",
+        "dispatch_date": "2023-10-02T17:58:35.817Z",
+        "arrival_date": "2023-10-02T18:33:36.016Z",
+        "created_at": "2023-10-02T21:38:35.617Z",
+        "updated_at": "2023-10-02T16:09:56.469Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "9b690ea4-18ad-43fb-84ea-324631a3330a"
+      },
+      {
+        "id": "447c1a90-de1b-4bf1-aec4-45f0be00d4f5",
+        "shipment_status": "Delivered",
+        "dispatch_date": "2023-10-02T14:37:34.974Z",
+        "arrival_date": "2023-10-03T01:55:28.902Z",
+        "created_at": "2023-10-02T20:12:53.863Z",
+        "updated_at": "2023-10-03T11:05:23.072Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "b5c12efc-c055-4d76-baf2-d8619c93e20c"
+      },
+      {
+        "id": "d8c9f82b-eee4-4e29-8d77-6506c56a28aa",
+        "shipment_status": "Delayed",
+        "dispatch_date": "2023-10-02T23:22:11.515Z",
+        "arrival_date": "2023-10-02T14:07:36.288Z",
+        "created_at": "2023-10-03T03:47:40.193Z",
+        "updated_at": "2023-10-03T11:09:55.933Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "b5c12efc-c055-4d76-baf2-d8619c93e20c"
+      },
+      {
+        "id": "7ce060f0-ea2a-4482-a657-8dc6dbe63ce9",
+        "shipment_status": "Cancelled",
+        "dispatch_date": "2023-10-03T12:28:09.333Z",
+        "arrival_date": "2023-10-03T06:38:51.063Z",
+        "created_at": "2023-10-03T12:34:59.468Z",
+        "updated_at": "2023-10-02T13:51:19.130Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "f31a6825-f17e-4b0f-97a8-e08c73947aaf"
+      }
+    ],
+    "client": [
+      {
+        "id": "2d1b0d1f-2e1f-4736-92ef-7b321efda302",
+        "name": "ABC Company",
+        "address": "123 Main St",
+        "phone": "555-123-4567",
+        "email": "info@abccompany.com",
+        "created_at": "2023-10-03T11:10:17.565Z",
+        "updated_at": "2023-10-03T12:25:44.647Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "9800ea1b-82aa-42dc-b9b8-c92161886d5c",
+        "name": "XYZ Corporation",
+        "address": "456 Elm St",
+        "phone": "555-987-6543",
+        "email": "contact@xyzcorp.com",
+        "created_at": "2023-10-02T20:11:26.851Z",
+        "updated_at": "2023-10-03T04:53:19.983Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "8f2b6c7b-1a63-4735-836b-efcc99aef0ce",
+        "name": "123 Industries",
+        "address": "789 Oak Ave",
+        "phone": "555-789-0123",
+        "email": "sales@123industries.com",
+        "created_at": "2023-10-02T21:18:44.061Z",
+        "updated_at": "2023-10-03T02:30:58.070Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "a0c0b901-636a-412b-8e3e-0e2d7a8860a7",
+        "name": "Global Solutions",
+        "address": "10 Pine Rd",
+        "phone": "555-456-7890",
+        "email": "support@globalsolutions.com",
+        "created_at": "2023-10-02T17:40:45.466Z",
+        "updated_at": "2023-10-02T15:59:59.415Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "25e30848-f4eb-4cd0-8492-bb4c9633534c",
+        "name": "Acme Enterprises",
+        "address": "555 Maple Dr",
+        "phone": "555-321-6549",
+        "email": "info@acmeenterprises.com",
+        "created_at": "2023-10-03T00:03:02.811Z",
+        "updated_at": "2023-10-02T16:07:22.860Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "9e51bab1-060b-4e62-bf09-c1b516b1c363",
+        "email": "Aaliyah.Zboncak40@roq.tech",
+        "firstName": "Lilliana",
+        "lastName": "Lesch",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/847.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "94db346a-c854-4eaf-a081-e2b59422c7c0",
+        "email": "Jovan_Cruickshank@roq.tech",
+        "firstName": "Ransom",
+        "lastName": "Miller",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/597.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "46862d58-048d-466a-b18c-73899305434a",
+        "email": "Carolina.Steuber@roq.tech",
+        "firstName": "Sven",
+        "lastName": "Fahey",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51271526",
+        "tenantId": null
+      },
+      {
+        "reference": "14a401b0-6558-44ff-8b09-b632db2d7bdf",
+        "email": "Dangelo_Wilkinson@roq.tech",
+        "firstName": "Enos",
+        "lastName": "Oberbrunner",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/18063208",
+        "tenantId": null
+      },
+      {
+        "reference": "79b15b18-c132-4a16-9832-79f14c47779d",
+        "email": "Deangelo_Franecki@roq.tech",
+        "firstName": "Cristal",
+        "lastName": "Rempel",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/79181484",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "warehouse": [
+      {
+        "id": "2011aad2-b5f4-4545-8da5-bc5602c10346",
+        "name": "Main Warehouse",
+        "location": "New York",
+        "capacity": 50494,
+        "current_inventory": 54387,
+        "created_at": "2023-10-02T23:16:14.006Z",
+        "updated_at": "2023-10-02T20:38:22.152Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "e6d1bb80-3ffb-4555-9724-404e5b5565ee",
+        "name": "Central Storage",
+        "location": "London",
+        "capacity": 28064,
+        "current_inventory": 73264,
+        "created_at": "2023-10-02T13:52:00.003Z",
+        "updated_at": "2023-10-02T13:47:37.619Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "8e612f81-abd5-4a36-bd80-b74175e5baf8",
+        "name": "Distribution Center",
+        "location": "Tokyo",
+        "capacity": 43937,
+        "current_inventory": 98018,
+        "created_at": "2023-10-02T18:04:04.290Z",
+        "updated_at": "2023-10-02T21:39:51.498Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "068fd200-a1d8-4711-84a0-b09710d95dd9",
+        "name": "Regional Depot",
+        "location": "Sydney",
+        "capacity": 81083,
+        "current_inventory": 12389,
+        "created_at": "2023-10-03T07:08:01.955Z",
+        "updated_at": "2023-10-02T23:04:24.244Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "260741d7-9a56-4fd9-882c-e6efcb23be70",
+        "name": "Logistics Hub",
+        "location": "Berlin",
+        "capacity": 60470,
+        "current_inventory": 6338,
+        "created_at": "2023-10-03T03:37:01.273Z",
+        "updated_at": "2023-10-03T03:56:32.352Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "33e443ca-2af2-4adb-8c5e-50e0e8ab00b9",
+        "product_name": "Widget A",
+        "product_description": "High-quality and durable",
+        "quantity": 91347,
+        "received_date": "2023-10-03T01:45:09.462Z",
+        "created_at": "2023-10-03T08:58:18.001Z",
+        "updated_at": "2023-10-02T22:44:57.838Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "eda93530-2745-401e-8e48-bdd58ac3bbf0",
+        "product_name": "Gadget B",
+        "product_description": "Cutting-edge technology",
+        "quantity": 70779,
+        "received_date": "2023-10-02T20:27:18.582Z",
+        "created_at": "2023-10-02T19:20:28.148Z",
+        "updated_at": "2023-10-03T11:53:41.532Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "536d4287-7d9a-49ad-a3c9-b8e84c658e5e",
+        "product_name": "Tool C",
+        "product_description": "Versatile and user-friendly",
+        "quantity": 97675,
+        "received_date": "2023-10-03T09:25:03.250Z",
+        "created_at": "2023-10-02T22:09:53.149Z",
+        "updated_at": "2023-10-03T09:12:24.519Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "e48e7852-3f30-4149-9f20-2a6cb3b6c0d8",
+        "product_name": "Device D",
+        "product_description": "Sleek and stylish design",
+        "quantity": 45459,
+        "received_date": "2023-10-03T03:25:41.402Z",
+        "created_at": "2023-10-03T10:14:52.077Z",
+        "updated_at": "2023-10-03T09:56:13.770Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "3b33405c-ba0c-4d3c-ab9e-aadafa480070",
+        "product_name": "Accessory E",
+        "product_description": "Enhances productivity",
+        "quantity": 5900,
+        "received_date": "2023-10-02T21:06:43.440Z",
+        "created_at": "2023-10-02T23:01:11.328Z",
+        "updated_at": "2023-10-02T17:33:25.883Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "shipment": [
+      {
+        "id": "d077f52d-faf5-4db7-b6aa-33fdf9e45ab1",
+        "shipment_status": "In Transit",
+        "dispatch_date": "2023-10-02T17:53:22.884Z",
+        "arrival_date": "2023-10-02T18:57:01.874Z",
+        "created_at": "2023-10-03T07:30:53.733Z",
+        "updated_at": "2023-10-02T21:01:24.361Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "e48e7852-3f30-4149-9f20-2a6cb3b6c0d8"
+      },
+      {
+        "id": "d6c1e2f3-aca2-427d-916e-0cc4d6f3cdbf",
+        "shipment_status": "Delivered",
+        "dispatch_date": "2023-10-02T13:09:24.347Z",
+        "arrival_date": "2023-10-02T15:10:13.452Z",
+        "created_at": "2023-10-02T15:17:59.647Z",
+        "updated_at": "2023-10-02T18:45:53.542Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "eda93530-2745-401e-8e48-bdd58ac3bbf0"
+      },
+      {
+        "id": "f354f5ab-5ee5-407e-b0e7-4ddbe6714b6d",
+        "shipment_status": "Out for Delivery",
+        "dispatch_date": "2023-10-03T04:51:18.338Z",
+        "arrival_date": "2023-10-02T16:26:19.790Z",
+        "created_at": "2023-10-02T20:01:58.068Z",
+        "updated_at": "2023-10-02T17:59:13.784Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "e48e7852-3f30-4149-9f20-2a6cb3b6c0d8"
+      },
+      {
+        "id": "62e3e382-889b-4b61-8a87-d0de27953783",
+        "shipment_status": "Delayed",
+        "dispatch_date": "2023-10-02T23:03:03.765Z",
+        "arrival_date": "2023-10-02T23:27:11.449Z",
+        "created_at": "2023-10-02T22:01:11.269Z",
+        "updated_at": "2023-10-03T11:45:19.507Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "e48e7852-3f30-4149-9f20-2a6cb3b6c0d8"
+      },
+      {
+        "id": "393592da-0e3d-4af3-acbc-c97fa4f218f2",
+        "shipment_status": "Arrived at Destination",
+        "dispatch_date": "2023-10-03T07:04:35.219Z",
+        "arrival_date": "2023-10-02T15:22:49.936Z",
+        "created_at": "2023-10-03T05:11:49.192Z",
+        "updated_at": "2023-10-02T16:47:47.570Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "3b33405c-ba0c-4d3c-ab9e-aadafa480070"
+      }
+    ],
+    "client": [
+      {
+        "id": "1492f725-3825-487c-8fdf-2f7b107d948b",
+        "name": "ABC Company",
+        "address": "123 Main Street",
+        "phone": "123-456-7890",
+        "email": "info@abccompany.com",
+        "created_at": "2023-10-02T22:45:04.557Z",
+        "updated_at": "2023-10-02T16:44:24.095Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "8c179482-f322-444c-94a2-39258c1d21e2",
+        "name": "XYZ Corporation",
+        "address": "456 Park Avenue",
+        "phone": "987-654-3210",
+        "email": "contact@xyzcorp.com",
+        "created_at": "2023-10-02T18:44:47.191Z",
+        "updated_at": "2023-10-02T17:41:16.318Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "f901bef3-2930-4db2-9c85-65c054fec345",
+        "name": "Acme Ltd.",
+        "address": "789 Elm Road",
+        "phone": "555-123-4567",
+        "email": "sales@acme.com",
+        "created_at": "2023-10-02T14:43:02.178Z",
+        "updated_at": "2023-10-02T16:26:18.133Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "2873f9f0-0f69-4ba1-a095-93247c0921c7",
+        "name": "Tech Solutions",
+        "address": "10 Oak Lane",
+        "phone": "888-999-0000",
+        "email": "support@techsolutions.com",
+        "created_at": "2023-10-03T03:58:17.504Z",
+        "updated_at": "2023-10-02T18:10:05.538Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "7b1c1a34-6591-41c4-902d-e2f3c1713d24",
+        "name": "Global Enterprises",
+        "address": "555 Pine Court",
+        "phone": "111-222-3333",
+        "email": "info@globale.com",
+        "created_at": "2023-10-03T10:48:20.782Z",
+        "updated_at": "2023-10-02T14:52:42.248Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "0af9b9d4-294a-435c-8c55-1a1491096e3c",
+        "email": "Syble_Metz@roq.tech",
+        "firstName": "Deborah",
+        "lastName": "Fahey",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/718.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "e857e2d8-74a4-4502-8dda-bad0f0b315cf",
+        "email": "Juvenal.Skiles-Farrell@roq.tech",
+        "firstName": "Ross",
+        "lastName": "Price",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/53554069",
+        "tenantId": null
+      },
+      {
+        "reference": "ffb921c1-fc7e-432b-85ff-87f8dc46c6c2",
+        "email": "Amy75@roq.tech",
+        "firstName": "Stella",
+        "lastName": "Bradtke",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/66.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "7d35550e-4f6b-4617-8e5b-c1995096d285",
+        "email": "Everette82@roq.tech",
+        "firstName": "Alvina",
+        "lastName": "Lakin",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/67600342",
+        "tenantId": null
+      },
+      {
+        "reference": "8bebf98f-3119-4877-99d0-84b32f840455",
+        "email": "Jacques.Hickle94@roq.tech",
+        "firstName": "Pearline",
+        "lastName": "Streich",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1001.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "warehouse": [
+      {
+        "id": "b529a943-cc36-47df-969c-2236af6df702",
+        "name": "Main Warehouse",
+        "location": "New York",
+        "capacity": 55362,
+        "current_inventory": 70265,
+        "created_at": "2023-10-03T01:22:15.454Z",
+        "updated_at": "2023-10-03T07:00:52.383Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "a523bea9-4dac-4e48-94a3-925d5e0ed3bd",
+        "name": "Central Storage",
+        "location": "London",
+        "capacity": 89215,
+        "current_inventory": 16005,
+        "created_at": "2023-10-03T07:20:27.633Z",
+        "updated_at": "2023-10-02T18:15:58.895Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "6748fcaf-d632-46c2-847a-207969d5f151",
+        "name": "Distribution Center",
+        "location": "Tokyo",
+        "capacity": 28674,
+        "current_inventory": 23178,
+        "created_at": "2023-10-02T16:46:15.637Z",
+        "updated_at": "2023-10-02T21:17:30.612Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "05ae8e36-ce94-45ef-9a78-d83881c39bb9",
+        "name": "Logistics Hub",
+        "location": "Sydney",
+        "capacity": 6671,
+        "current_inventory": 92359,
+        "created_at": "2023-10-02T19:31:56.665Z",
+        "updated_at": "2023-10-02T22:59:42.390Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "7eff55c9-518d-4cbf-afe8-6e609e285063",
+        "name": "Regional Depot",
+        "location": "Paris",
+        "capacity": 36026,
+        "current_inventory": 37022,
+        "created_at": "2023-10-02T14:01:24.271Z",
+        "updated_at": "2023-10-03T09:32:24.675Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "cbbd5f44-64ae-4b41-927c-1dae56eedab9",
+        "product_name": "Smartphone",
+        "product_description": "High-performance device with advanced features",
+        "quantity": 69197,
+        "received_date": "2023-10-02T14:04:52.863Z",
+        "created_at": "2023-10-03T04:58:00.667Z",
+        "updated_at": "2023-10-03T05:58:18.943Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "1ca7b52e-899b-4b8c-8fd2-fdca866f8901",
+        "product_name": "Laptop",
+        "product_description": "Portable computer for work and entertainment",
+        "quantity": 18526,
+        "received_date": "2023-10-03T00:46:37.874Z",
+        "created_at": "2023-10-03T06:04:19.615Z",
+        "updated_at": "2023-10-02T20:15:25.734Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "eee5ff41-f02a-4bc3-a700-8174670c87cb",
+        "product_name": "Headphones",
+        "product_description": "Premium audio accessory for immersive sound experience",
+        "quantity": 36819,
+        "received_date": "2023-10-03T05:14:25.722Z",
+        "created_at": "2023-10-02T18:00:29.924Z",
+        "updated_at": "2023-10-03T09:04:34.536Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "0bd264ba-ba0f-441d-b85f-a77fd821bb1d",
+        "product_name": "Smartwatch",
+        "product_description": "Wearable device with health and fitness tracking",
+        "quantity": 19745,
+        "received_date": "2023-10-03T06:25:04.782Z",
+        "created_at": "2023-10-02T15:32:22.543Z",
+        "updated_at": "2023-10-03T04:31:56.121Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "a2f04c72-e289-40a1-a20c-fd127d0db067",
+        "product_name": "Tablet",
+        "product_description": "Versatile device for productivity and entertainment",
+        "quantity": 92933,
+        "received_date": "2023-10-03T05:51:26.362Z",
+        "created_at": "2023-10-03T01:59:01.665Z",
+        "updated_at": "2023-10-03T11:21:16.430Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "shipment": [
+      {
+        "id": "a6376963-18a7-4163-a5d6-1fd238e577b7",
+        "shipment_status": "In Transit",
+        "dispatch_date": "2023-10-03T05:21:34.463Z",
+        "arrival_date": "2023-10-03T03:53:17.763Z",
+        "created_at": "2023-10-02T15:34:28.532Z",
+        "updated_at": "2023-10-03T01:04:06.189Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "cbbd5f44-64ae-4b41-927c-1dae56eedab9"
+      },
+      {
+        "id": "9dbb7b1b-8a17-47db-bf0c-680fea1630d3",
+        "shipment_status": "Delivered",
+        "dispatch_date": "2023-10-02T22:43:56.718Z",
+        "arrival_date": "2023-10-03T11:24:23.192Z",
+        "created_at": "2023-10-03T02:22:35.433Z",
+        "updated_at": "2023-10-03T07:02:21.123Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "a2f04c72-e289-40a1-a20c-fd127d0db067"
+      },
+      {
+        "id": "6355781f-94fe-4217-b6df-0cbcf7862406",
+        "shipment_status": "Out for Delivery",
+        "dispatch_date": "2023-10-03T06:46:42.367Z",
+        "arrival_date": "2023-10-03T08:23:00.198Z",
+        "created_at": "2023-10-03T01:57:45.405Z",
+        "updated_at": "2023-10-03T04:41:58.188Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "cbbd5f44-64ae-4b41-927c-1dae56eedab9"
+      },
+      {
+        "id": "963c0384-776e-412e-a2c7-342149df43b2",
+        "shipment_status": "Arrived at Destination",
+        "dispatch_date": "2023-10-03T12:10:43.074Z",
+        "arrival_date": "2023-10-02T22:43:32.024Z",
+        "created_at": "2023-10-03T03:02:16.483Z",
+        "updated_at": "2023-10-02T22:27:46.854Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "eee5ff41-f02a-4bc3-a700-8174670c87cb"
+      },
+      {
+        "id": "6c7b6b67-1ed9-4844-aa26-a039ade34907",
+        "shipment_status": "Shipping Delayed",
+        "dispatch_date": "2023-10-02T19:13:23.388Z",
+        "arrival_date": "2023-10-02T20:37:09.121Z",
+        "created_at": "2023-10-02T14:35:57.812Z",
+        "updated_at": "2023-10-03T03:20:41.396Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "eee5ff41-f02a-4bc3-a700-8174670c87cb"
+      }
+    ],
+    "client": [
+      {
+        "id": "1a72046e-23a9-4cbf-af5b-7e696221a924",
+        "name": "ABC Company",
+        "address": "123 Main Street",
+        "phone": "123-456-7890",
+        "email": "info@abccompany.com",
+        "created_at": "2023-10-03T03:43:08.110Z",
+        "updated_at": "2023-10-03T00:49:08.758Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "254936cd-969b-445d-a21d-846bac71f454",
+        "name": "XYZ Corporation",
+        "address": "456 Park Avenue",
+        "phone": "555-123-4567",
+        "email": "contact@xyzcorp.com",
+        "created_at": "2023-10-02T22:24:38.371Z",
+        "updated_at": "2023-10-03T05:57:16.095Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "5a9e23c8-1e50-4019-a99a-e76ca32c1b1d",
+        "name": "123 Enterprises",
+        "address": "789 Elm Road",
+        "phone": "987-654-3210",
+        "email": "sales@123enterprises.com",
+        "created_at": "2023-10-02T13:39:54.276Z",
+        "updated_at": "2023-10-02T15:15:14.900Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "1c3bdadb-2341-4e83-a498-53ca967a3d3e",
+        "name": "Acme Inc.",
+        "address": "10 Oak Lane",
+        "phone": "111-222-3333",
+        "email": "support@acmeinc.com",
+        "created_at": "2023-10-03T01:54:18.536Z",
+        "updated_at": "2023-10-02T16:49:30.276Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "9afdaaa1-9b18-4c02-b22a-05cf951b8de5",
+        "name": "Best Solutions",
+        "address": "555 Pine Street",
+        "phone": "444-555-6666",
+        "email": "info@bestsolutions.com",
+        "created_at": "2023-10-03T04:18:51.918Z",
+        "updated_at": "2023-10-02T15:03:47.119Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "8a849bc1-debc-41b4-a717-ef6ff0dcd06c",
+        "email": "Pearline_Flatley@roq.tech",
+        "firstName": "Fay",
+        "lastName": "Kozey",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/532.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "48b1f8ca-d99b-4d26-af7b-ec28e1ce0276",
+        "email": "Derek7@roq.tech",
+        "firstName": "Brando",
+        "lastName": "Wunsch",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/30213703",
+        "tenantId": null
+      },
+      {
+        "reference": "925677f2-e5af-4693-975e-f8fc63849737",
+        "email": "Giuseppe6@roq.tech",
+        "firstName": "Jarvis",
+        "lastName": "Gutkowski",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/513.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "2d8daa34-c297-4d37-9ec8-356905508f7d",
+        "email": "Mary76@roq.tech",
+        "firstName": "Nayeli",
+        "lastName": "Little",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/2517449",
+        "tenantId": null
+      },
+      {
+        "reference": "85a5f45a-0e6a-4b9d-ac89-0b8faf10a1b0",
+        "email": "Layla69@roq.tech",
+        "firstName": "Loma",
+        "lastName": "Greenholt",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/560.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "warehouse": [
+      {
+        "id": "ddb4a681-c74a-43a7-9b94-14a3fb984ae2",
+        "name": "Main Warehouse",
+        "location": "New York",
+        "capacity": 50399,
+        "current_inventory": 73199,
+        "created_at": "2023-10-02T16:34:04.983Z",
+        "updated_at": "2023-10-03T00:20:48.714Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "aacce091-5bf3-4d80-bb63-23384caaaafb",
+        "name": "Central Distribution Center",
+        "location": "Los Angeles",
+        "capacity": 22100,
+        "current_inventory": 43603,
+        "created_at": "2023-10-02T17:56:44.792Z",
+        "updated_at": "2023-10-02T19:11:07.841Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "51a77f92-f5af-4264-985f-d53764170fa8",
+        "name": "Regional Storage Facility",
+        "location": "Chicago",
+        "capacity": 82824,
+        "current_inventory": 2813,
+        "created_at": "2023-10-03T08:37:25.050Z",
+        "updated_at": "2023-10-02T22:04:01.350Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "1234b76a-3c2f-41d8-a0d7-71d60acb0eb7",
+        "name": "Logistics Hub",
+        "location": "Houston",
+        "capacity": 73277,
+        "current_inventory": 62220,
+        "created_at": "2023-10-03T11:18:30.999Z",
+        "updated_at": "2023-10-03T06:02:41.835Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "a929cfbc-a6c7-49f2-9845-32277770b4dd",
+        "name": "Inventory Depot",
+        "location": "Miami",
+        "capacity": 64081,
+        "current_inventory": 39759,
+        "created_at": "2023-10-02T17:30:37.801Z",
+        "updated_at": "2023-10-02T16:30:38.025Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "b7ffa47a-ac84-4a2a-b5e7-31fdba0f8b7e",
+        "product_name": "Widget",
+        "product_description": "High-quality and durable",
+        "quantity": 57356,
+        "received_date": "2023-10-02T18:44:05.306Z",
+        "created_at": "2023-10-03T07:04:35.506Z",
+        "updated_at": "2023-10-03T00:22:32.991Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "a209b0ae-d0f6-47e7-b738-28522b4f0440",
+        "product_name": "Gadget",
+        "product_description": "Cutting-edge technology",
+        "quantity": 66646,
+        "received_date": "2023-10-03T04:51:50.956Z",
+        "created_at": "2023-10-03T04:58:39.484Z",
+        "updated_at": "2023-10-02T21:12:29.958Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "6b64db85-4ce5-41f1-b4cd-09443c14a116",
+        "product_name": "Tool",
+        "product_description": "Versatile and efficient",
+        "quantity": 43609,
+        "received_date": "2023-10-03T11:10:13.521Z",
+        "created_at": "2023-10-03T11:02:03.843Z",
+        "updated_at": "2023-10-03T12:14:08.662Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "824059e0-c403-443b-84d2-7fff15b460e1",
+        "product_name": "Appliance",
+        "product_description": "Sleek and stylish",
+        "quantity": 82125,
+        "received_date": "2023-10-03T04:48:36.080Z",
+        "created_at": "2023-10-03T03:38:40.834Z",
+        "updated_at": "2023-10-03T12:03:41.976Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "e0e48f90-8acd-4d08-b79f-9fa74ac61649",
+        "product_name": "Device",
+        "product_description": "Reliable performance",
+        "quantity": 18752,
+        "received_date": "2023-10-03T02:39:53.540Z",
+        "created_at": "2023-10-02T15:43:05.099Z",
+        "updated_at": "2023-10-03T11:23:21.782Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "shipment": [
+      {
+        "id": "3355ae8d-b940-47d9-aa57-33a7f4a06219",
+        "shipment_status": "In Transit",
+        "dispatch_date": "2023-10-02T19:32:04.585Z",
+        "arrival_date": "2023-10-03T04:05:38.623Z",
+        "created_at": "2023-10-02T21:00:54.599Z",
+        "updated_at": "2023-10-02T18:37:09.283Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "a209b0ae-d0f6-47e7-b738-28522b4f0440"
+      },
+      {
+        "id": "7e078d04-d688-45bf-b8eb-41dc10826d3b",
+        "shipment_status": "Delivered",
+        "dispatch_date": "2023-10-03T02:42:46.525Z",
+        "arrival_date": "2023-10-03T11:29:29.926Z",
+        "created_at": "2023-10-02T14:48:13.197Z",
+        "updated_at": "2023-10-03T09:54:16.627Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "e0e48f90-8acd-4d08-b79f-9fa74ac61649"
+      },
+      {
+        "id": "5cdb4c84-3961-4f48-ba54-ee55053141d2",
+        "shipment_status": "Pending",
+        "dispatch_date": "2023-10-03T00:18:01.612Z",
+        "arrival_date": "2023-10-03T07:31:49.868Z",
+        "created_at": "2023-10-02T23:59:55.553Z",
+        "updated_at": "2023-10-02T19:15:26.380Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "e0e48f90-8acd-4d08-b79f-9fa74ac61649"
+      },
+      {
+        "id": "833512ce-5c9d-4f7b-a1be-081fee50de80",
+        "shipment_status": "Out for Delivery",
+        "dispatch_date": "2023-10-03T11:57:39.036Z",
+        "arrival_date": "2023-10-02T23:25:47.578Z",
+        "created_at": "2023-10-03T02:14:38.006Z",
+        "updated_at": "2023-10-02T23:45:43.100Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "b7ffa47a-ac84-4a2a-b5e7-31fdba0f8b7e"
+      },
+      {
+        "id": "5420c202-4a45-4438-a5b9-9b7db5bcb281",
+        "shipment_status": "Delayed",
+        "dispatch_date": "2023-10-02T20:03:32.681Z",
+        "arrival_date": "2023-10-02T22:04:33.765Z",
+        "created_at": "2023-10-02T23:33:23.825Z",
+        "updated_at": "2023-10-02T13:56:26.019Z",
+        "company_id": "main_entity_pk",
+        "inventory_id": "824059e0-c403-443b-84d2-7fff15b460e1"
+      }
+    ],
+    "client": [
+      {
+        "id": "be60fb69-f93d-4292-b3cd-07b7082fd1a1",
+        "name": "ABC Company",
+        "address": "123 Main Street",
+        "phone": "555-123-4567",
+        "email": "info@abccompany.com",
+        "created_at": "2023-10-02T22:17:59.823Z",
+        "updated_at": "2023-10-03T07:13:57.330Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "fc301afa-07a8-4e82-9daa-2adf2bbd69a1",
+        "name": "XYZ Corporation",
+        "address": "456 Park Avenue",
+        "phone": "555-987-6543",
+        "email": "contact@xyzcorp.com",
+        "created_at": "2023-10-03T06:22:47.589Z",
+        "updated_at": "2023-10-03T11:27:43.195Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "c26a543e-1e5c-4c17-8808-3cd0b9277f0f",
+        "name": "123 Enterprises",
+        "address": "789 Elm Road",
+        "phone": "555-456-7890",
+        "email": "sales@123enterprises.com",
+        "created_at": "2023-10-03T11:34:22.467Z",
+        "updated_at": "2023-10-03T12:08:03.956Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "4f9a34b6-395b-41aa-8765-97a16aff83c8",
+        "name": "Acme Ltd.",
+        "address": "10 Oak Lane",
+        "phone": "555-789-1234",
+        "email": "support@acmeltd.com",
+        "created_at": "2023-10-02T18:52:20.278Z",
+        "updated_at": "2023-10-03T01:32:58.238Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "91e90440-b14b-4ba0-857f-cc14cceaafb4",
+        "name": "Global Solutions",
+        "address": "555 Pine Avenue",
+        "phone": "555-234-5678",
+        "email": "info@globalsolutions.com",
+        "created_at": "2023-10-03T09:01:15.957Z",
+        "updated_at": "2023-10-02T14:34:58.385Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "ea66e7e9-98fb-4a04-862c-70102ec58599",
+        "email": "Erik_Casper@roq.tech",
+        "firstName": "Katrine",
+        "lastName": "Huel",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/38640520",
+        "tenantId": null
+      },
+      {
+        "reference": "2a9c67f7-a2de-4fd0-bc46-bba4caa4c7a0",
+        "email": "Grady.Leffler@roq.tech",
+        "firstName": "Vernie",
+        "lastName": "Pfeffer",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/27952123",
+        "tenantId": null
+      },
+      {
+        "reference": "8d1d362e-d0c3-409e-ba1c-cd5dc05b8cb3",
+        "email": "Ayla_Kiehn83@roq.tech",
+        "firstName": "Kallie",
+        "lastName": "Mayer",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/988.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "f5a85865-a746-439b-863f-2a23fb4b902c",
+        "email": "Gaston.Hilll@roq.tech",
+        "firstName": "Mayra",
+        "lastName": "Stanton",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/91617041",
+        "tenantId": null
+      },
+      {
+        "reference": "83567e56-2780-4c5b-873e-f171282b08fc",
+        "email": "Wilfredo.Armstrong@roq.tech",
+        "firstName": "Josie",
+        "lastName": "Nienow",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/57976198",
+        "tenantId": null
+      }
+    ]
+  }
+]
